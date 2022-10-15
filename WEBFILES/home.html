@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PeerYear</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href = "data:image/png;base64,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"
+        type = "image/x-icon">
+    
+    <style>
+    html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+    </style>
+  </head>
+<body class="w3-theme-l5">
+<script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"implied","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"PeerYear","website_privacy_policy_url":"https://github.com/hellom38/PeerYear/blob/main/ToS.md"});
+});
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script src="https://peeryear.w3spaces.com/DBFILES/dbmain.js"></script>
+    <script>
+      CheckDetails();
+      </script>
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i></a>
+  <a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="settings.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="messages.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="messages.html" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="messages.html" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="messages.html" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  </div>
+  <a href="settings.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+  <a href="login.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="data:image/png;base64,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" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 id="ProfileText" class="w3-center">My Profile</h4>
+         <p class="w3-center"><img src="https://www.w3schools.com/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>Some text..</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Some other text..</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://www.w3schools.com/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">News</span>
+            <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+            <span class="w3-tag w3-small w3-theme">Games</span>
+            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">Send Status</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="https://www.w3schools.com/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://www.w3schools.com/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5>Footer</h5>
+</footer>
+
+<footer class="w3-container w3-theme-d5">
+  <p>Made by <a href="" target="_blank">Hellom38</a></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html> 
