@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>PeerYear</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+    </style>
+  </head>
+<body class="w3-theme-l5">
+
+    
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="settings.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="messages.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="messages.html" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="messages.html" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="messages.html" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  </div>
+  <a href="settings.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+
+
+
+<script>
+    $(document).ready(function($) {
+
+  console.clear();
+
+  ScrollOut({
+    cssProps: {
+      visibleY: true,
+      viewportY: true,
+      scrollPercentY: true
+    },
+    threshold:0.2
+  });
+
+});  
+</script>
+<style>
+    * { box-sizing: border-box;}
+body { font-size: 30px; padding: 0; margin: 0;}
+
+.scrollHalf { position: relative}
+/*.scrollHalf__grupo { opacity: calc(1/(1+(var(--visible-y)*var(--visible-y)*var(--visible-y)*var(--visible-y)))); transition: all 200ms ease-in-out;}*/
+
+
+.scrollHalf__grupo {  transition: all 200ms ease-in-out; }
+.scrollHalf__grupo__imagen { overflow: hidden; }
+.scrollHalf__grupo__contenido { padding: 3rem;     }
+
+
+.scrollHalf__grupo[data-scroll="out"] { opacity: 0;}
+.scrollHalf__grupo[data-scroll="in"] { opacity: calc(var(--visible-y)*1.9);  }  
+
+
+@media screen and (min-width:900px) {
+  .scrollHalf__grupo { min-height: 100vh;}
+  .scrollHalf__grupo__imagen { position: fixed; top: 0; left: 0; width: 50vw;}
+  .scrollHalf__grupo__imagen img {  min-height: 100vh;  min-width: 50vw; }
+  .scrollHalf__grupo__contenido { margin: 0 3vw 0 52vw;}
+}
+</style>
+<div class="scrollHalf">
+  
+  <div class="scrollHalf__grupo" data-scroll>
+    <div class="scrollHalf__grupo__imagen">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106155/OrionTree_Fairbairn_1071.jpg" />
+    </div>
+    <div class="scrollHalf__grupo__contenido">
+
+    </div>
+  </div>
+  
+  <div class="scrollHalf__grupo kk" data-scroll>
+    <div class="scrollHalf__grupo__imagen">
+      <img src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F5242668e-93e9-11e8-95f8-8640db9060a7?fit=scale-down&source=next&width=700" />
+      <!-- 
+        De ALMA, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=60432670 
+      -->
+    </div>
+    <div class="scrollHalf__grupo__contenido">
+      <h1>News Update</h1>
+We have made the News better and more dynamic for those who would like to 
+browse the news more
+    </div>
+  </div>
+  
+  <div class="scrollHalf__grupo" data-scroll>
+    <div class="scrollHalf__grupo__imagen">
+      <img src="https://cdn.utaustinbootcamps.com/wp-content/uploads/sites/119/2020/12/tes_gen_blog_code7-1-800x412.jpg" />
+    </div>
+    <div class="scrollHalf__grupo__contenido">
+      <h1>CSS designer position</h1>
+We are looking for an experienced css designer up for hire.
+We expect past work and a portfolio for this job and hope to work with you.
+
+If you would like to apply, contact dev.hellom38.hireable@gmail.com
+
+Yours sincerely,
+
+The PeerYear Team
+    </div>
+  </div> 
+  
+</div>
+</body>
+</html>
