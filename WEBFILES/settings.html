@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PeerYear</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+    html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+    </style>
+  </head>
+<body class="w3-theme-l5">
+<section class="py-5 my-5">
+		<div class="container">
+			<h1 class="mb-5">Account Settings</h1>
+			<div class="bg-white shadow rounded-lg d-block d-sm-flex">
+				<div class="profile-tab-nav border-right">
+					<div class="p-4">
+						<div class="img-circle text-center mb-3">
+							<img src="img/user2.jpg" alt="Image" class="shadow">
+						</div>
+						<h4 class="text-center">Kiran Acharya</h4>
+					</div>
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">
+							<i class="fa fa-home text-center mr-1"></i> 
+							Account
+						</a>
+						<a class="nav-link" id="password-tab" data-toggle="pill" href="#password" role="tab" aria-controls="password" aria-selected="false">
+							<i class="fa fa-key text-center mr-1"></i> 
+							Password
+						</a>
+						<a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="false">
+							<i class="fa fa-user text-center mr-1"></i> 
+							Security
+						</a>
+						<a class="nav-link" id="application-tab" data-toggle="pill" href="#application" role="tab" aria-controls="application" aria-selected="false">
+							<i class="fa fa-tv text-center mr-1"></i> 
+							Application
+						</a>
+						<a class="nav-link" id="notification-tab" data-toggle="pill" href="#notification" role="tab" aria-controls="notification" aria-selected="false">
+							<i class="fa fa-bell text-center mr-1"></i> 
+							Notification
+						</a>
+					</div>
+				</div>
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+						<h3 class="mb-4">Account Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>First Name</label>
+								  	<input type="text" class="form-control" value="Kiran">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Last Name</label>
+								  	<input type="text" class="form-control" value="Acharya">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Email</label>
+								  	<input type="text" class="form-control" value="kiranacharya287@gmail.com">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Phone number</label>
+								  	<input type="text" class="form-control" value="+91 9876543215">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Company</label>
+								  	<input type="text" class="form-control" value="Kiran Workspace">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Designation</label>
+								  	<input type="text" class="form-control" value="UI Developer">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+								  	<label>Bio</label>
+									<textarea class="form-control" rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vero enim error similique quia numquam ullam corporis officia odio repellendus aperiam consequatur laudantium porro voluptatibus, itaque laboriosam veritatis voluptatum distinctio!</textarea>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+						<h3 class="mb-4">Password Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Old password</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>New password</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Confirm new password</label>
+								  	<input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+						<h3 class="mb-4">Security Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Login</label>
+								  	<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Two-factor auth</label>
+								  	<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="recovery">
+										<label class="form-check-label" for="recovery">
+										Recovery
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
+						<h3 class="mb-4">Application Settings</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="app-check">
+										<label class="form-check-label" for="app-check">
+										App check
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+										<label class="form-check-label" for="defaultCheck2">
+										Lorem ipsum dolor sit.
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+						<h3 class="mb-4">Notification Settings</h3>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="notification1">
+								<label class="form-check-label" for="notification1">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium accusamus, neque cupiditate quis
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="notification2" >
+								<label class="form-check-label" for="notification2">
+									hic nesciunt repellat perferendis voluptatum totam porro eligendi.
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="notification3" >
+								<label class="form-check-label" for="notification3">
+									commodi fugiat molestiae tempora corporis. Sed dignissimos suscipit
+								</label>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+$primary: #007bff;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+
+body {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav{
+	min-width:250px;
+}
+.tab-content{
+	flex:1;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.nav-pills{
+	a.nav-link{
+		padding:15px 20px;
+		border-bottom:1px solid #ddd;
+		border-radius:0;
+		color:#333;
+		i{
+			width:20px;
+		}
+	}
+}
+
+.img-circle {
+	img {
+		height: 100px;
+		width: 100px;
+		border-radius: 100%;
+		border: 5px solid #fff;
+	}
+}
+
+
+
+
+</style> 
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i></a>
+  <a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="settings.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="messages.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="messages.html" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="messages.html" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="messages.html" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  </div>
+  <a href="settings.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+  <a href="login.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="data:image/png;base64,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" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+
+</body>
+</html> 
